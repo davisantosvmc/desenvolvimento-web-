@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio em HTML</title>
+</head>
+<body>
+    <h1>Audio em HTML</h1>
+
+    <p>Clique no campo de reprodução para ouvir o audio</p>
+
+    <audio id="meuAudio" controls loop>
+        <source
+            src="foi-quando-gyro-finalmente-entendeu.mp3"
+            type="audio/mpeg"
+        />
+
+        Seu Navegador nao suporta a reproducao de audio
+    </audio>
+    <script>
+        const audio = document.getElementById("meuAudio");
+        audio.volume = 0.5;
+    </script>
+</body>
+</html>
